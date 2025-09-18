@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BrightHope — For Every Child</title>
+  <meta name="description" content="A clean, professional nonprofit template inspired by UNICEF's design language. Built with accessible, responsive HTML/CSS/JS." />
+  <meta property="og:title" content="BrightHope — For Every Child" />
+  <meta property="og:description" content="A clean, professional nonprofit template inspired by UNICEF's design language." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1495360010541-f48722b34f7d?q=80&w=1600&auto=format&fit=crop" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container nav" role="navigation" aria-label="Main Navigation">
+      <a class="brand" href="#">
+        <div class="brand-logo" aria-hidden="true">bh</div>
+        <h1>BrightHope</h1>
+      </a>
+      <nav class="menu" aria-label="Primary">
+        <a href="#programs">Our Work</a>
+        <a href="#impact">Impact</a>
+        <a href="#stories">Stories</a>
+        <a href="#about">About</a>
+      </nav>
+      <div class="nav-cta">
+        <button class="btn ghost" id="translateBtn" aria-label="Translate" title="Switch language">🌐 <span id="langIndicator" class="lang-indicator">EN</span></button>
+        <button class="btn primary" id="donateOpen">Donate</button>
+        <button class="hamburger" id="hamburger" aria-controls="mobileMenu" aria-expanded="false">☰ Menu</button>
+      </div>
+    </div>
+    <div id="mobileMenu" class="container mobile-menu" role="navigation" aria-label="Mobile Navigation">
+      <a href="#programs">Our Work</a>
+      <a href="#impact">Impact</a>
+      <a href="#stories">Stories</a>
+      <a href="#about">About</a>
+      <button class="btn primary" style="width:fit-content" id="donateOpenMobile">Donate</button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" aria-label="Hero">
+    <div class="hero-media" aria-hidden="true">
+      <img src="images/image4.webp" alt="Children smiling and playing" />
+      <div class="hero-overlay" aria-hidden="true"></div>
+    </div>
+    <div class="container hero-inner">
+      <span class="eyebrow">For every child — a fair chance</span>
+      <h2>We help children survive and thrive through health, education, and protection.</h2>
+      <p>BrightHope partners with communities and supporters to deliver life‑saving aid, quality education, and safe environments for children everywhere. Your support powers urgent responses and long‑term change.</p>
+      <div class="hero-actions">
+        <button class="btn primary" id="donateOpenHero">Donate now</button>
+        <a href="#programs" class="btn light">Explore our work</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Highlights -->
+  <section class="highlights container" aria-label="Highlights">
+    <div class="cards" role="list">
+      <article class="card" role="listitem">
+        <div class="card-icon" aria-hidden="true">💧</div>
+        <div>
+          <h3>Clean Water</h3>
+          <p>Bringing safe water and sanitation to the most vulnerable communities.</p>
+        </div>
+      </article>
+      <article class="card" role="listitem">
+        <div class="card-icon" aria-hidden="true">📚</div>
+        <div>
+          <h3>Quality Education</h3>
+          <p>Helping every child learn with inclusive, engaging classrooms and tools.</p>
+        </div>
+      </article>
+      <article class="card" role="listitem">
+        <div class="card-icon" aria-hidden="true">🩺</div>
+        <div>
+          <h3>Child Health</h3>
+          <p>Vaccines, nutrition, and care that protect children from preventable disease.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Programs -->
+  <section id="programs" class="container" aria-labelledby="programsTitle">
+    <div class="section-head">
+      <h2 id="programsTitle">Our work</h2>
+      <a href="#" class="btn light">See all programs</a>
+    </div>
+    <div class="grid-3">
+      <article class="tile">
+        <img src="images/image2.jpg" alt="Teacher with students in a classroom"/>
+        <div class="tile-body">
+          <span class="chip">Education</span>
+          <h3>Learning for every child</h3>
+          <p>From early childhood to adolescence, we expand access to quality learning and skills.</p>
+        </div>
+        <div class="tile-foot">
+          <a href="#">Learn more</a>
+          <button class="btn ghost" aria-label="Donate to education" data-donate>Donate</button>
+        </div>
+      </article>
+      <article class="tile">
+        <img src="images/medical.jpeg" alt="Health worker vaccinating a child"/>
+        <div class="tile-body">
+          <span class="chip">Health</span>
+          <h3>Stronger health systems</h3>
+          <p>We deliver vaccines, nutrition, and maternal care to keep children safe and healthy.</p>
+        </div>
+        <div class="tile-foot">
+          <a href="#">Learn more</a>
+          <button class="btn ghost" aria-label="Donate to health" data-donate>Donate</button>
+        </div>
+      </article>
+      <article class="tile">
+        <img src="images/image4.webp" alt="Volunteers distributing relief supplies"/>
+        <div class="tile-body">
+          <span class="chip">Protection</span>
+          <h3>Protection in emergencies</h3>
+          <p>Saving childhoods in the face of war, disaster, and climate crisis.</p>
+        </div>
+        <div class="tile-foot">
+          <a href="#">Learn more</a>
+          <button class="btn ghost" aria-label="Donate to protection" data-donate>Donate</button>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Impact stats -->
+  <section id="impact" class="container" aria-labelledby="impactTitle">
+    <h2 id="impactTitle">Your impact at a glance</h2>
+    <div class="stats" role="list">
+      <div class="stats-grid">
+        <div class="stat" role="listitem">
+          <div class="num" aria-label="People reached">3.2M</div>
+          <div class="label">children reached in 2024</div>
+        </div>
+        <div class="stat" role="listitem">
+          <div class="num" aria-label="Water points built">12k</div>
+          <div class="label">safe water points built</div>
+        </div>
+        <div class="stat" role="listitem">
+          <div class="num" aria-label="Vaccinations delivered">28M</div>
+          <div class="label">vaccinations delivered</div>
+        </div>
+        <div class="stat" role="listitem">
+          <div class="num" aria-label="Schools supported">6.4k</div>
+          <div class="label">schools supported</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stories / News -->
+  <section id="stories" class="container" aria-labelledby="storiesTitle">
+    <div class="section-head">
+      <h2 id="storiesTitle">Latest stories</h2>
+      <a href="#" class="btn light">Visit news center</a>
+    </div>
+    <div class="list">
+      <article class="story">
+        <img src="images/image5.jpeg" alt="Child reading a book"/>
+        <div class="body">
+          <div class="meta">Read the Story</div>
+          <h3>This is what war leaves behind, not just ruins, but stolen childhoods.</h3>
+          <p>He lost his home, his school, and his safe place—but not his hope. With your help, we can turn this rubble into a future worth fighting for. Donate today and be part of his story of survival and rebuilding..</p>
+          <a href="#">Read the story →</a>
+        </div>
+      </article>
+      <div class="bullet-list">
+        <div class="bullet"><span class="dot" aria-hidden="true"></span><div><strong>Safe water arrives</strong><br><span class="muted">WASH • 26 Aug 2025</span></div></div>
+        <div class="bullet"><span class="dot" aria-hidden="true"></span><div><strong>Cold‑chain keeps vaccines moving</strong><br><span class="muted">Health • 20 Aug 2025</span></div></div>
+        <div class="bullet"><span class="dot" aria-hidden="true"></span><div><strong>Protecting children in emergencies</strong><br><span class="muted">Child Protection • 12 Aug 2025</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Band -->
+  <section class="container cta" aria-label="Donate call to action">
+    <div class="cta-inner">
+      <div>
+        <h3>Every child deserves a future. Your gift makes it possible.</h3>
+        <p class="note">Your gift can change that. It can provide shelter to a child who has lost their home, food to ease their hunger, and education to rebuild their tomorrow. Most importantly, it gives hope—the kind that tells a child they are not forgotten.</p>
+      </div>
+      <button class="btn light" id="donateOpenBand">Donate securely</button>
+    </div>
+  </section>
+
+  <!-- About + Newsletter -->
+  <section id="about" class="container" aria-labelledby="aboutTitle">
+    <div class="grid-3" style="grid-template-columns:1.3fr 1fr 1fr">
+      <div>
+        <h2 id="aboutTitle">Who we are</h2>
+        <p>BrightHope is a nonprofit organization dedicated to helping children survive and thrive. We work with partners to deliver life‑saving aid, strengthen systems, and advocate for children’s rights.</p>
+        <a href="#" class="btn light">Learn more</a>
+      </div>
+      <div>
+        <h3>Subscribe for updates</h3>
+        <form id="newsletter" aria-label="Newsletter signup">
+          <label class="sr-only" for="email">Email</label>
+          <input id="email" name="email" type="email" required placeholder="you@example.com" style="width:100%;padding:.9rem 1rem;border:1px solid #d8e7f2;border-radius:999px;margin:.4rem 0"/>
+          <button class="btn primary" type="submit" style="width:100%">Subscribe</button>
+          <p class="note">By subscribing, you agree to our <a href="#">privacy policy</a>.</p>
+        </form>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <p>fundraising@brighthope.org<br>+63 900 000 0000</p>
+        <p>123 Hope Street</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer role="contentinfo">
+    <div class="container footer-grid">
+      <div>
+        <div class="brand" aria-label="Brand">
+          <div class="brand-logo" aria-hidden="true">bh</div>
+          <h1>BrightHope</h1>
+        </div>
+        <p style="max-width:50ch">We are a children‑first organization. Registered non‑stock, non‑profit. Donations are tax‑deductible where applicable by law.</p>
+        <div style="display:flex;gap:.6rem">
+          <a href="#" aria-label="Facebook">🄵</a>
+          <a href="#" aria-label="Twitter">𝕏</a>
+          <a href="#" aria-label="YouTube">▶</a>
+          <a href="#" aria-label="Instagram">◎</a>
+        </div>
+      </div>
+      <div>
+        <h4>Programs</h4>
+        <a href="#">Education</a><br>
+        <a href="#">Health</a><br>
+        <a href="#">WASH</a><br>
+        <a href="#">Protection</a>
+      </div>
+      <div>
+        <h4>Resources</h4>
+        <a href="#">News</a><br>
+        <a href="#">Publications</a><br>
+        <a href="#">Careers</a><br>
+        <a href="#">Procurement</a>
+      </div>
+      <div>
+        <h4>Governance</h4>
+        <a href="#">Annual report</a><br>
+        <a href="#">Financials</a><br>
+        <a href="#">Safeguarding</a><br>
+        <a href="#">Policies</a>
+      </div>
+    </div>
+    <div class="container copy">© <span id="year"></span> BrightHope. All rights reserved.</div>
+  </footer>
+<!-- Donate Modal -->
+<dialog id="donateModal">
+  <div class="modal">
+    <div class="media" aria-hidden="true"></div>
+    <div class="content">
+      <div style="display:flex;justify-content:space-between;align-items:center">
+        <h3 id="donateTitle" style="margin:1rem 0 .4rem">Donate to BrightHope</h3>
+        <button class="btn ghost" id="donateClose">✕</button>
+      </div>
+
+      <p class="note">Choose an amount and payment method:</p>
+
+      <!-- Preset amounts -->
+      <div class="amounts">
+        <button data-amount="5">$5</button>
+        <button data-amount="10">$10</button>
+        <button data-amount="25">$25</button>
+        <button data-amount="50">$50</button>
+      </div>
+
+      <!-- Custom amount -->
+      <input id="otherAmount" type="number" min="1" 
+        placeholder="Custom amount (USD)" 
+        style="width:100%;padding:.8rem 1rem;border:1px solid #d8e7f2;border-radius:12px" />
+
+      <!-- Payment options -->
+      <div style="margin-top:1rem">
+        <label><input type="radio" name="payMethod" value="paypal" checked>💳 PayPal / Credit Card</label><br>
+        <label><input type="radio" name="payMethod" value="usdt">USDT (Wallet)</label><br>
+        <label><input type="radio" name="payMethod" value="metamask"> MetaMask (ETH)</label>
+      </div>
+
+      <!-- Network Selector for USDT -->
+      <div id="networkBox" style="margin-top:.8rem;display:none">
+        <label for="networkSelect"><strong>Choose Network:</strong></label><br>
+        <select id="networkSelect" style="padding:.5rem;border-radius:8px;border:1px solid #d8e7f2;margin-top:.3rem">
+          <option value="ethereum">Ethereum</option>
+          <option value="bsc">Binance Smart Chain</option>
+          <option value="polygon">Polygon</option>
+        </select>
+      </div>
+
+      <!-- Donate button -->
+      <button class="btn primary" id="donateNow" style="margin-top:1rem;width:100%">Donate Now</button>
+
+      <!-- PayPal Box -->
+      <div id="paypalBox" class="qr-box hidden">
+        <h4>Donate with PayPal</h4>
+        <p class="note">You can donate via PayPal / Credit Card:</p>
+        <div id="paypal-button-container"></div>
+        <p class="note" style="margin-top:1rem">Or scan this QR code:</p>
+        <img src="images/paypalqr.jpeg" 
+            alt="PayPal QR Code" style="max-width:180px;" />
+      </div>
+
+      <!-- Crypto Box -->
+      <div id="cryptoBox" class="qr-box hidden">
+        <h4>Donate with MetaMask / USDT</h4>
+        <p class="note">Wallet Address:</p>
+        <code id="usdtWallet" style="display:block;word-break:break-all;margin-bottom:.6rem">
+          0xEE83d2EFDfa5821EF8Cd2f6bCCCDddbFFF30514a
+        </code>
+        <button class="btn light" id="copyWallet">Copy Wallet Address</button>
+        <img src="images/metamaskqr.jpeg" 
+            alt="Crypto QR Code" style="max-width:180px; margin-top:1rem;" />
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<!-- Thank You Modal -->
+<dialog id="thankYouModal">
+  <div style="padding:2rem;text-align:center">
+    <h3>🎉 Thank You!</h3>
+    <p id="thankYouMsg">Your donation helps children survive and thrive.</p>
+    <button class="btn primary" id="thankYouClose" style="margin-top:1rem">Close</button>
+  </div>
+</dialog>
+
+<!-- PayPal SDK -->
+<script src="https://www.paypal.com/sdk/js?client-id=AfFEqaQkTtNPIudKUFLoEQ9TlBbHMPnibR-kEpJhGZZj3su-0YGw5KTUIxLF4fH1KZVy7t_y4w_hNZWd&currency=USD"></script>
+<!-- Ethers.js for Web3 -->
+<script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.min.js"></script>
+<!-- QR Code Library -->
+<script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.3/build/qrcode.min.js"></script>
+<!-- Google Translate -->
+<div id="google_translate_element" style="display:none;"></div>
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+<!-- Main Script -->
+<script src="script.js"></script>
+</body>
+</html>
